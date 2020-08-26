@@ -1,0 +1,28 @@
+### 4 When a [GET] request is sent, handle the request and return all the Todos.
+GET http://localhost:8000/api/todo/
+
+
+
+### 5 When a Todo is created, it will make a request to the server. Handle the request by creating a Todo and setting the proper status code.
+POST http://localhost:8000/api/todo/
+Content-Type: application/json
+
+{
+    "name": "Work on Coding Project",
+    "status": "complete"
+}
+
+### 6 When a [GET] request is sent with an id, handle the request and return the correct Todo.
+GET http://localhost:8000/api/todo/1
+
+### 7 When a previously saved Todo is updated, it will make a request to the server. Handle the request by updating the existing Todo.
+POST http://localhost:8000/api/todo/1?_method=PUT
+Content-Type: application/json
+
+{
+    "name": "Get a haircut",
+    "status": "complete"
+}
+
+### 8 When a previously saved Todo is deleted, it will make a request to the server. Handle the deletion and return the proper status code.
+DELETE http://localhost:8000/api/todo/1

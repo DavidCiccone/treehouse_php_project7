@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Build a Laravel REST API</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -65,7 +65,7 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
+        @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
@@ -81,18 +81,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                   Build a Laravel REST API
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://github.com/DavidCiccone/treehouse_php_project5/blob/master/README.md">README</a>
+                    <a href="{{env('app_url')}}/api/todo/" target="_blank">ToDo List</a>
+                    <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en" target="_blank">JSON Formatter</a>
                 </div>
             </div>
         </div>
